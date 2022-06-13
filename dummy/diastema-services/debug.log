@@ -1,0 +1,88 @@
+INFO 2022-06-13 21:07:39,479 - Server Started
+WARNING 2022-06-13 21:07:39,491 -  * Debugger is active!
+INFO 2022-06-13 21:07:39,503 -  * Debugger PIN: 986-800-098
+INFO 2022-06-13 21:08:38,684 - Ingesting data
+DEBUG 2022-06-13 21:08:38,685 - {"metis-usecase": true, "minio-output": "metis/datasets/boats", "job-id": "a82ea98423683", "metis-args": {"qid": "4647719228525909384", "vesselId": "9645425", "fromTime": "1654204324", "toTime": "1654247524", "page": "0", "size": "1000", "samplingRate": "300"}}
+DEBUG 2022-06-13 21:08:40,688 - Starting new HTTP connection (1): localhost:9000
+DEBUG 2022-06-13 21:08:40,716 - http://localhost:9000 "GET /metis?location= HTTP/1.1" 200 128
+DEBUG 2022-06-13 21:08:40,758 - http://localhost:9000 "PUT /metis/datasets/boats/ingested.txt HTTP/1.1" 200 0
+INFO 2022-06-13 21:08:40,758 - Ingestion Done
+INFO 2022-06-13 21:08:40,759 - 127.0.0.1 - - [13/Jun/2022 21:08:40] "POST /data-ingesting HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:40,763 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:08:40,764 - 127.0.0.1 - - [13/Jun/2022 21:08:40] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:42,784 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:08:42,784 - 127.0.0.1 - - [13/Jun/2022 21:08:42] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:44,788 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:08:44,788 - 127.0.0.1 - - [13/Jun/2022 21:08:44] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:46,800 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:08:46,801 - 127.0.0.1 - - [13/Jun/2022 21:08:46] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:48,817 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:08:48,818 - 127.0.0.1 - - [13/Jun/2022 21:08:48] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:50,824 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:08:50,824 - 127.0.0.1 - - [13/Jun/2022 21:08:50] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:08:52,831 - 127.0.0.1 - - [13/Jun/2022 21:08:52] "GET /data-ingesting/a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:09:17,711 - Ingesting data
+DEBUG 2022-06-13 21:09:17,712 - {"metis-usecase": true, "minio-output": "metis/datasets/ships", "job-id": "a82ea98423683", "metis-args": {"qid": "4647719228523909384", "vesselId": "9645445", "fromTime": "1354204324", "toTime": "1654247525", "page": "1", "size": "2000", "samplingRate": "100"}}
+DEBUG 2022-06-13 21:09:19,713 - Resetting dropped connection: localhost
+DEBUG 2022-06-13 21:09:19,785 - http://localhost:9000 "PUT /metis/datasets/ships/ingested.txt HTTP/1.1" 200 0
+INFO 2022-06-13 21:09:19,785 - Ingestion Done
+INFO 2022-06-13 21:09:19,785 - 127.0.0.1 - - [13/Jun/2022 21:09:19] "POST /data-ingesting HTTP/1.1" 200 -
+INFO 2022-06-13 21:09:19,788 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:09:19,788 - 127.0.0.1 - - [13/Jun/2022 21:09:19] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:09:21,795 - The Ingestion id is --> a82ea98423683
+INFO 2022-06-13 21:09:21,795 - 127.0.0.1 - - [13/Jun/2022 21:09:21] "GET /data-ingesting/progress?id=a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:09:23,806 - 127.0.0.1 - - [13/Jun/2022 21:09:23] "GET /data-ingesting/a82ea98423683 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:11,778 - Loading Given JSON
+DEBUG 2022-06-13 21:11:11,778 - {"minio-input": "metis/datasets/ships", "minio-output": "metis/analysis-039ff178fb8a5/cleaned-3", "job-id": "1634599632387", "max-shrink": 0.2}
+DEBUG 2022-06-13 21:11:13,780 - Resetting dropped connection: localhost
+DEBUG 2022-06-13 21:11:13,843 - http://localhost:9000 "PUT /metis/analysis-039ff178fb8a5/cleaned-3/cleaned.txt HTTP/1.1" 200 0
+INFO 2022-06-13 21:11:13,843 - Cleaning Done
+INFO 2022-06-13 21:11:13,843 - 127.0.0.1 - - [13/Jun/2022 21:11:13] "POST /data-cleaning HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:13,847 - The Cleaning id is --> 1634599632387
+INFO 2022-06-13 21:11:13,848 - 127.0.0.1 - - [13/Jun/2022 21:11:13] "GET /data-cleaning/progress?id=1634599632387 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:15,854 - The Cleaning id is --> 1634599632387
+INFO 2022-06-13 21:11:15,855 - 127.0.0.1 - - [13/Jun/2022 21:11:15] "GET /data-cleaning/progress?id=1634599632387 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:17,860 - The Cleaning id is --> 1634599632387
+INFO 2022-06-13 21:11:17,860 - 127.0.0.1 - - [13/Jun/2022 21:11:17] "GET /data-cleaning/progress?id=1634599632387 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:19,867 - The Cleaning id is --> 1634599632387
+INFO 2022-06-13 21:11:19,867 - 127.0.0.1 - - [13/Jun/2022 21:11:19] "GET /data-cleaning/progress?id=1634599632387 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:21,874 - The Cleaning id is --> 1634599632387
+INFO 2022-06-13 21:11:21,875 - 127.0.0.1 - - [13/Jun/2022 21:11:21] "GET /data-cleaning/progress?id=1634599632387 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:23,966 - update
+INFO 2022-06-13 21:11:23,967 - Cleaning executed for the analysis with ID: 039ff178fb8a5
+INFO 2022-06-13 21:11:23,967 - 127.0.0.1 - - [13/Jun/2022 21:11:23] "POST /messages HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:24,029 - Loading Given JSON
+DEBUG 2022-06-13 21:11:24,029 - {"minio-input": "metis/datasets/boats", "minio-output": "metis/analysis-039ff178fb8a5/cleaned-4", "job-id": "1634599632388", "max-shrink": null}
+DEBUG 2022-06-13 21:11:26,068 - http://localhost:9000 "PUT /metis/analysis-039ff178fb8a5/cleaned-4/cleaned.txt HTTP/1.1" 200 0
+INFO 2022-06-13 21:11:26,068 - Cleaning Done
+INFO 2022-06-13 21:11:26,069 - 127.0.0.1 - - [13/Jun/2022 21:11:26] "POST /data-cleaning HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:26,073 - The Cleaning id is --> 1634599632388
+INFO 2022-06-13 21:11:26,074 - 127.0.0.1 - - [13/Jun/2022 21:11:26] "GET /data-cleaning/progress?id=1634599632388 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:28,116 - The Cleaning id is --> 1634599632388
+INFO 2022-06-13 21:11:28,117 - 127.0.0.1 - - [13/Jun/2022 21:11:28] "GET /data-cleaning/progress?id=1634599632388 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:30,137 - update
+INFO 2022-06-13 21:11:30,137 - Cleaning executed for the analysis with ID: 039ff178fb8a5
+INFO 2022-06-13 21:11:30,138 - 127.0.0.1 - - [13/Jun/2022 21:11:30] "POST /messages HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:30,208 - Joining Given JSON
+DEBUG 2022-06-13 21:11:30,208 - {"job-id": "1634599632348", "column": "id", "type": "inner", "inputs": ["metis/analysis-039ff178fb8a5/cleaned-3", "metis/analysis-039ff178fb8a5/cleaned-4"], "output": "metis/analysis-039ff178fb8a5/joined-5"}
+DEBUG 2022-06-13 21:11:32,252 - http://localhost:9000 "PUT /metis/analysis-039ff178fb8a5/joined-5/joined.txt HTTP/1.1" 200 0
+INFO 2022-06-13 21:11:32,252 - Joining Done
+INFO 2022-06-13 21:11:32,252 - 127.0.0.1 - - [13/Jun/2022 21:11:32] "POST /join HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:32,256 - The Joining id is --> 1634599632348
+INFO 2022-06-13 21:11:32,257 - 127.0.0.1 - - [13/Jun/2022 21:11:32] "GET /join/progress?id=1634599632348 HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:34,269 - update
+INFO 2022-06-13 21:11:34,269 - Join executed for the analysis with ID: 039ff178fb8a5
+INFO 2022-06-13 21:11:34,269 - 127.0.0.1 - - [13/Jun/2022 21:11:34] "POST /messages HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:44,457 - update
+INFO 2022-06-13 21:11:44,458 - Classification executed for the analysis with ID: 039ff178fb8a5
+INFO 2022-06-13 21:11:44,461 - 127.0.0.1 - - [13/Jun/2022 21:11:44] "POST /messages HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:44,473 - Sending data to Kafka
+DEBUG 2022-06-13 21:11:44,473 - {"key": "Metis", "data": {"key": "Metis", "data": "1634599633250"}}
+INFO 2022-06-13 21:11:46,477 - Sending Done
+INFO 2022-06-13 21:11:46,479 - 127.0.0.1 - - [13/Jun/2022 21:11:46] "POST /data-sink HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:46,487 - update
+INFO 2022-06-13 21:11:46,487 - Data Sink Executed for the analysis with ID: 039ff178fb8a5
+INFO 2022-06-13 21:11:46,487 - 127.0.0.1 - - [13/Jun/2022 21:11:46] "POST /messages HTTP/1.1" 200 -
+INFO 2022-06-13 21:11:46,505 - update
+INFO 2022-06-13 21:11:46,505 - Analysis completed with ID: 039ff178fb8a5
+INFO 2022-06-13 21:11:46,505 - 127.0.0.1 - - [13/Jun/2022 21:11:46] "POST /messages HTTP/1.1" 200 -
